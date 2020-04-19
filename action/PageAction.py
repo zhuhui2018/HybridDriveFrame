@@ -1,5 +1,4 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
 
 from selenium import webdriver
 from config.VarConfig import *

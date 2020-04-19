@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
+
 
 import win32clipboard as w
 import win32con

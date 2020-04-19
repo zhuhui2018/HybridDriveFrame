@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
+
 
 import win32api
 import win32con

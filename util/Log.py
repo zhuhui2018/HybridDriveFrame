@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
+
 
 import logging.config
 from config.VarConfig import parentDirPath

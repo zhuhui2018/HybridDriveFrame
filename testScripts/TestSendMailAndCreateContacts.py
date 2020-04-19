@@ -1,5 +1,4 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
 
 from . import *
 from testScripts.CreateContacts import *

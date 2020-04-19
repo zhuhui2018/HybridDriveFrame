@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
+
 
 from . import *
 from testScripts.WriteTestResult import writeTestResult

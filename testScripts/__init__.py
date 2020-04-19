@@ -1,5 +1,4 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
 
 from util.ParseExcel import ParseExcel
 from config.VarConfig import *

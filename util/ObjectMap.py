@@ -1,5 +1,5 @@
 # -*-coding:utf-8 -*-
-# @Author : Zhigang
+
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver

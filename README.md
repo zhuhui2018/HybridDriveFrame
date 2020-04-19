@@ -26,7 +26,7 @@ testData
 testScripts
 
     --CreateContacts.py   创建联系人模块
-    --TestSendMailAndCreateContacts.py      解析testData，完成发送邮件并创建联系人操作，主脚本
+    --TestSendMailAndCreateContacts.py      解析testData，完成发送邮件并创建联系人操作，主脚本，执行此脚本完成测试
     --WriteTestResult.py    记录测试结果
 
 util
@@ -38,11 +38,3 @@ util
     --ObjectMap.py         获取页面元素
     --ParseExcel.py           读写excel模块
     --WaitUtil.py               显示等待模块
-
-RunTest.py    主程序入口，操作此脚本可完成程序运行
- 
-未封装的测试代码，可忽略：
-
-    add_contact_send_mail.py
-    AddContactSendEmailWithAttachment.py
-    TestSendMailWithAttachment.py

@@ -1,0 +1,306 @@
+2019-03-21 19:56:30 TestSendMailAndCreateContacts.py[line:31] INFO --执行测试用例'登录126邮箱'--
+2019-03-21 19:56:30 TestSendMailAndCreateContacts.py[line:50] INFO ******调用关键字驱动******
+2019-03-21 19:56:30 TestSendMailAndCreateContacts.py[line:54] INFO 测试用例共'15'步
+2019-03-21 19:56:31 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2019-03-21 19:56:31 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 127.0.0.1:5768
+2019-03-21 19:56:33 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session HTTP/1.1" 200 890
+2019-03-21 19:56:33 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:33 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'打开浏览器'成功
+2019-03-21 19:56:33 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/url {"url": "http://www.126.com", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:33 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/url HTTP/1.1" 200 72
+2019-03-21 19:56:33 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:33 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'访问被测试网址http://www.126.com'成功
+2019-03-21 19:56:34 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/window/current/maximize {"windowHandle": "current", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:35 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/window/current/maximize HTTP/1.1" 200 72
+2019-03-21 19:56:35 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:35 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'最大化窗口'成功
+2019-03-21 19:56:40 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'等待126邮箱登录主页加载完成'成功
+2019-03-21 19:56:40 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/source {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:40 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/source HTTP/1.1" 200 24334
+2019-03-21 19:56:40 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:40 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'断言当前活动页面源码中是否包含“126网易免费邮--你的专业电子邮局”'成功
+2019-03-21 19:56:40 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//iframe[contains(@id,\"x-URS-iframe\")]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:40 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:40 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:40 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/frame {"id": {"ELEMENT": "0.40346217489469716-1", "element-6066-11e4-a52e-4f735466cecf": "0.40346217489469716-1"}, "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:40 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/frame HTTP/1.1" 200 72
+2019-03-21 19:56:40 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:40 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'显示等待id属性值为x-URS-iframe的frame框的出现，然后切换进入该frame框中'成功
+2019-03-21 19:56:40 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//input[@name=\"email\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:40 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 101
+2019-03-21 19:56:40 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:40 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-1/clear {"id": "0.869261580563675-1", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:40 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-1/clear HTTP/1.1" 200 72
+2019-03-21 19:56:40 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:40 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'清除用户名输入框中的缓存用户性'成功
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//input[@name=\"email\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 101
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-1/value {"text": "yzg18730603667", "value": ["y", "z", "g", "1", "8", "7", "3", "0", "6", "0", "3", "6", "6", "7"], "id": "0.869261580563675-1", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-1/value HTTP/1.1" 200 72
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入登录用户名'成功
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//input[@name=\"password\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 101
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-2/value {"text": "807237157@yzg", "value": ["8", "0", "7", "2", "3", "7", "1", "5", "7", "@", "y", "z", "g"], "id": "0.869261580563675-2", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-2/value HTTP/1.1" 200 72
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入登录密码'成功
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "id", "value": "dologin", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 101
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-3/click {"id": "0.869261580563675-3", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:41 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.869261580563675-3/click HTTP/1.1" 200 72
+2019-03-21 19:56:41 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:41 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'点击登录按钮'成功
+2019-03-21 19:56:47 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'等待'成功
+2019-03-21 19:56:47 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/frame {"id": null, "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:47 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/frame HTTP/1.1" 200 72
+2019-03-21 19:56:47 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:47 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'切回默认会话窗体'成功
+2019-03-21 19:56:47 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/title {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:47 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/title HTTP/1.1" 200 88
+2019-03-21 19:56:47 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:47 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'断言登录成功后的页面标题是否包含“网易邮箱6.0版”关键内容'成功
+2019-03-21 19:56:52 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'等待'成功
+2019-03-21 19:56:52 TestSendMailAndCreateContacts.py[line:99] INFO 用例'登录126邮箱'执行通过
+2019-03-21 19:56:52 TestSendMailAndCreateContacts.py[line:31] INFO --执行测试用例'添加联系人'--
+2019-03-21 19:56:52 TestSendMailAndCreateContacts.py[line:33] INFO ******调用数据驱动******
+2019-03-21 19:56:52 CreateContacts.py[line:24] INFO 开始添加联系人'lucy@126.com'
+2019-03-21 19:56:52 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[text()=\"\u901a\u8baf\u5f55\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:52 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:52 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:52 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-1/click {"id": "0.43877950050646986-1", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:52 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-1/click HTTP/1.1" 200 72
+2019-03-21 19:56:52 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:52 CreateContacts.py[line:74] INFO 执行步骤'点击“通讯录”链接，进入通讯录页面'成功
+2019-03-21 19:56:52 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u65b0\u5efa\u8054\u7cfb\u4eba\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:52 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 363
+2019-03-21 19:56:52 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u65b0\u5efa\u8054\u7cfb\u4eba\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/displayed {"id": "0.43877950050646986-2", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/displayed HTTP/1.1" 200 72
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 CreateContacts.py[line:74] INFO 执行步骤'显示等待“新建联系人”按钮在页面上可见'成功
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u65b0\u5efa\u8054\u7cfb\u4eba\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/click {"id": "0.43877950050646986-2", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/click HTTP/1.1" 200 72
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 CreateContacts.py[line:74] INFO 执行步骤'点击“新建联系人”按钮'成功
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//a[@title=\"\u7f16\u8f91\u8be6\u7ec6\u59d3\u540d\"]/preceding-sibling::div/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-3/displayed {"id": "0.43877950050646986-3", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-3/displayed HTTP/1.1" 200 72
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 CreateContacts.py[line:74] INFO 执行步骤'显示等待输入联系人姓名框是否在页面上可见'成功
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//a[@title=\"\u7f16\u8f91\u8be6\u7ec6\u59d3\u540d\"]/preceding-sibling::div/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-3/value {"text": "lucy", "value": ["l", "u", "c", "y"], "id": "0.43877950050646986-3", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-3/value HTTP/1.1" 200 72
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 CreateContacts.py[line:74] INFO 执行步骤'输入联系人姓名'成功
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//*[@id=\"iaddress_MAIL_wrap\"]//input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:53 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:53 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:53 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-4/value {"text": "lucy@126.com", "value": ["l", "u", "c", "y", "@", "1", "2", "6", ".", "c", "o", "m"], "id": "0.43877950050646986-4", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-4/value HTTP/1.1" 200 72
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 CreateContacts.py[line:74] INFO 执行步骤'输入电子邮箱'成功
+2019-03-21 19:56:54 CreateContacts.py[line:74] INFO 执行步骤'设为星标联系人'成功
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//*[@id=\"iaddress_TEL_wrap\"]//dd//input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-5/value {"text": "187xxxxxxxx", "value": ["1", "8", "7", "x", "x", "x", "x", "x", "x", "x", "x"], "id": "0.43877950050646986-5", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-5/value HTTP/1.1" 200 72
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 CreateContacts.py[line:74] INFO 执行步骤'输入手机号'成功
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//textarea", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-6/value {"text": "\u6dfb\u52a0\u65b0\u7684\u8054\u7cfb\u4eba", "value": ["\u6dfb", "\u52a0", "\u65b0", "\u7684", "\u8054", "\u7cfb", "\u4eba"], "id": "0.43877950050646986-6", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-6/value HTTP/1.1" 200 72
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 CreateContacts.py[line:74] INFO 执行步骤'输入联系人备注信息'成功
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[.=\"\u786e \u5b9a\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-7/click {"id": "0.43877950050646986-7", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:54 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-7/click HTTP/1.1" 200 72
+2019-03-21 19:56:54 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:54 CreateContacts.py[line:74] INFO 执行步骤'点击“确认”按钮保存新联系人'成功
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'等待2秒'成功
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/source {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/source HTTP/1.1" 200 129792
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'断言联系人是否成功添加'成功
+2019-03-21 19:56:56 CreateContacts.py[line:24] INFO 开始添加联系人'amy@qq.com'
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[text()=\"\u901a\u8baf\u5f55\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-1/click {"id": "0.43877950050646986-1", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-1/click HTTP/1.1" 200 72
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'点击“通讯录”链接，进入通讯录页面'成功
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u65b0\u5efa\u8054\u7cfb\u4eba\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/displayed {"id": "0.43877950050646986-2", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/displayed HTTP/1.1" 200 72
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'显示等待“新建联系人”按钮在页面上可见'成功
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u65b0\u5efa\u8054\u7cfb\u4eba\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/click {"id": "0.43877950050646986-2", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-2/click HTTP/1.1" 200 72
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'点击“新建联系人”按钮'成功
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//a[@title=\"\u7f16\u8f91\u8be6\u7ec6\u59d3\u540d\"]/preceding-sibling::div/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-8/displayed {"id": "0.43877950050646986-8", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-8/displayed HTTP/1.1" 200 72
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 CreateContacts.py[line:74] INFO 执行步骤'显示等待输入联系人姓名框是否在页面上可见'成功
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//a[@title=\"\u7f16\u8f91\u8be6\u7ec6\u59d3\u540d\"]/preceding-sibling::div/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:56 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:56 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:56 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-8/value {"text": "amy", "value": ["a", "m", "y"], "id": "0.43877950050646986-8", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-8/value HTTP/1.1" 200 72
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'输入联系人姓名'成功
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//*[@id=\"iaddress_MAIL_wrap\"]//input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 103
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-9/value {"text": "amy@qq.com", "value": ["a", "m", "y", "@", "q", "q", ".", "c", "o", "m"], "id": "0.43877950050646986-9", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-9/value HTTP/1.1" 200 72
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'输入电子邮箱'成功
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'设为星标联系人'成功
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//*[@id=\"iaddress_TEL_wrap\"]//dd//input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-10/value {"text": "158xxxxxxxx", "value": ["1", "5", "8", "x", "x", "x", "x", "x", "x", "x", "x"], "id": "0.43877950050646986-10", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-10/value HTTP/1.1" 200 72
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'输入手机号'成功
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//textarea", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-11/value {"text": "\u4e00\u9762\u4e4b\u7f18\u7684\u4eba", "value": ["\u4e00", "\u9762", "\u4e4b", "\u7f18", "\u7684", "\u4eba"], "id": "0.43877950050646986-11", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-11/value HTTP/1.1" 200 72
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'输入联系人备注信息'成功
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[.=\"\u786e \u5b9a\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-12/click {"id": "0.43877950050646986-12", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:57 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-12/click HTTP/1.1" 200 72
+2019-03-21 19:56:57 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:57 CreateContacts.py[line:74] INFO 执行步骤'点击“确认”按钮保存新联系人'成功
+2019-03-21 19:56:59 CreateContacts.py[line:74] INFO 执行步骤'等待2秒'成功
+2019-03-21 19:56:59 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/source {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:59 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/source HTTP/1.1" 200 138053
+2019-03-21 19:56:59 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:59 CreateContacts.py[line:74] INFO 执行步骤'断言联系人是否成功添加'成功
+2019-03-21 19:56:59 TestSendMailAndCreateContacts.py[line:43] INFO 用例'添加联系人' 执行成功
+2019-03-21 19:56:59 TestSendMailAndCreateContacts.py[line:31] INFO --执行测试用例'发送带附件的邮件'--
+2019-03-21 19:56:59 TestSendMailAndCreateContacts.py[line:50] INFO ******调用关键字驱动******
+2019-03-21 19:56:59 TestSendMailAndCreateContacts.py[line:54] INFO 测试用例共'17'步
+2019-03-21 19:56:59 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[.=\"\u9996\u9875\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:56:59 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:56:59 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:56:59 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-13/click {"id": "0.43877950050646986-13", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-13/click HTTP/1.1" 200 72
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'点击“首页”链接，进入邮箱首页'成功
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u5199 \u4fe1\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-14/displayed {"id": "0.43877950050646986-14", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-14/displayed HTTP/1.1" 200 72
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'判断“写信”按钮是否在页面上可见'成功
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u5199 \u4fe1\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-14/click {"id": "0.43877950050646986-14", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-14/click HTTP/1.1" 200 72
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'点击“写信”按钮'成功
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[contains(@id,\"_mail_emailinput\")]/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:00 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:00 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:00 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-15/value {"text": "xxx@qq.com", "value": ["x", "x", "x", "@", "q", "q", ".", "c", "o", "m"], "id": "0.43877950050646986-15", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:01 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-15/value HTTP/1.1" 200 72
+2019-03-21 19:57:01 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:01 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入收件人地址'成功
+2019-03-21 19:57:01 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[@aria-label=\"\u90ae\u4ef6\u4e3b\u9898\u8f93\u5165\u6846\uff0c\u8bf7\u8f93\u5165\u90ae\u4ef6\u4e3b\u9898\"]/input", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:01 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:01 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:01 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-16/value {"text": "\u5e26\u9644\u4ef6\u7684\u90ae\u4ef6", "value": ["\u5e26", "\u9644", "\u4ef6", "\u7684", "\u90ae", "\u4ef6"], "id": "0.43877950050646986-16", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:01 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-16/value HTTP/1.1" 200 72
+2019-03-21 19:57:01 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:01 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入邮件主题'成功
+2019-03-21 19:57:01 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//div[@title=\"\u70b9\u51fb\u6dfb\u52a0\u9644\u4ef6\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:01 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:01 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:01 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-17/click {"id": "0.43877950050646986-17", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:01 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-17/click HTTP/1.1" 200 72
+2019-03-21 19:57:01 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:01 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'点击“上传附件”链接'成功
+2019-03-21 19:57:03 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入附件所在绝对路径'成功
+2019-03-21 19:57:03 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'模拟键盘回车键'成功
+2019-03-21 19:57:04 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u4e0a\u4f20\u5b8c\u6210\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:04 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 360
+2019-03-21 19:57:04 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:04 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//span[text()=\"\u4e0a\u4f20\u5b8c\u6210\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:04 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:04 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:04 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-18/displayed {"id": "0.43877950050646986-18", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:04 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-18/displayed HTTP/1.1" 200 72
+2019-03-21 19:57:04 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:04 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'显示等待附件上传完成'成功
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//iframe[@tabindex=1]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/frame {"id": {"ELEMENT": "0.43877950050646986-19", "element-6066-11e4-a52e-4f735466cecf": "0.43877950050646986-19"}, "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/frame HTTP/1.1" 200 72
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'如果邮件正文的frame框是否可见，切换进该frame中'成功
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "/html/body", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 102
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.9659362706647816-1/value {"text": "\u53d1\u7ed9\u5149\u8363\u4e4b\u8def\u7684\u4e00\u5c01\u4fe1", "value": ["\u53d1", "\u7ed9", "\u5149", "\u8363", "\u4e4b", "\u8def", "\u7684", "\u4e00", "\u5c01", "\u4fe1"], "id": "0.9659362706647816-1", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.9659362706647816-1/value HTTP/1.1" 200 72
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'输入邮件正文'成功
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/frame {"id": null, "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/frame HTTP/1.1" 200 72
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'退出邮件正文的frame'成功
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element {"using": "xpath", "value": "//header//span[text()=\"\u53d1\u9001\"]", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element HTTP/1.1" 200 104
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-20/click {"id": "0.43877950050646986-20", "sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:05 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "POST /session/0720d6989dbc2d5deb9eed6522954f4e/element/0.43877950050646986-20/click HTTP/1.1" 200 72
+2019-03-21 19:57:05 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:05 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'点击邮件发送按钮'成功
+2019-03-21 19:57:09 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'等待邮件发送成功，返回结果'成功
+2019-03-21 19:57:09 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e/source {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:09 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "GET /session/0720d6989dbc2d5deb9eed6522954f4e/source HTTP/1.1" 200 163026
+2019-03-21 19:57:09 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:09 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'断言页面源码中是否出现“发送成功”关键内容'成功
+2019-03-21 19:57:09 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:5768/session/0720d6989dbc2d5deb9eed6522954f4e {"sessionId": "0720d6989dbc2d5deb9eed6522954f4e"}
+2019-03-21 19:57:09 connectionpool.py[line:393] DEBUG http://127.0.0.1:5768 "DELETE /session/0720d6989dbc2d5deb9eed6522954f4e HTTP/1.1" 200 72
+2019-03-21 19:57:09 remote_connection.py[line:440] DEBUG Finished Request
+2019-03-21 19:57:11 TestSendMailAndCreateContacts.py[line:95] INFO 执行步骤'关闭浏览器'成功
+2019-03-21 19:57:11 TestSendMailAndCreateContacts.py[line:99] INFO 用例'发送带附件的邮件'执行通过
+2019-03-21 19:57:11 TestSendMailAndCreateContacts.py[line:108] INFO 共3条用例，3条需要被执行，成功执行3条

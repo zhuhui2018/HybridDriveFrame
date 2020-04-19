@@ -21,10 +21,6 @@ def open_browser(browserName,*args):
         if browserName.lower() == "ie":
             driver=webdriver.Ie(executable_path=ieDriverFilePath)
         elif browserName.lower() == "chrome":
-            # "创建chrome浏览器的一个options实例对象"
-            chrome_options=Options()
-            # "添加屏蔽-ignore-certificate-errors提示信息的设置参数项"
-            chrome_options.add_experimental_option("excludeSwitches",["ignore-certificate-errors"])
             # "driver对象"
             driver=webdriver.Chrome(executable_path=chromeDriverFilePath,chrome_options=chrome_options)
             # driver=webdriver.Chrome(executable_path=chromeDriverFilePath)
@@ -172,11 +168,8 @@ def capture_screen(*args):
     currTime=getCurrentTime()
     # 拼接异常图片保存的绝对路径及名称
     picNameAndPath=str(createCurrentDateDir())+"\\"+str(currTime)+".png"
-    # print (picNameAndPath)  #D:\Hybrid_drive\exceptionpictures\2019-02-11\20-27-10-958053.png
     try:
         "截取屏幕图片，并保存为本地文件"
-        print (driver)
-        # D:\\Hybrid_drive\\exceptionpictures\\2019-02-11\\20-27-10-958053.png
         driver.get_screenshot_as_file(picNameAndPath.replace("\\",r"\\"))
     except Exception as e:
         raise e
